@@ -16,20 +16,22 @@
                 <img src="images/take-my-car-logo.png" alt="logo" class="logo">
             </a>
             <div class="navbar">
-                <a href="#inicio">Inicio</a>
-                <a href="#about-us">Sobre Nosotros</a>
-                <a href="#contactanos">Contáctanos</a>
-                <a href="https://take-my-car.netlify.app/ " class="btn_front">Let's go</a>
+                <a href="#inicio" data-key="home">Inicio</a>
+                <a href="#about-us" data-key="aboutus">Sobre Nosotros</a>
+                <a href="#contactanos" data-key="contactus">Contáctanos</a>
+                <a href="https://take-my-car.netlify.app/ " class="btn_front" data-key="lestsgo">Comenzar</a>
             </div>
+            <button onclick="changeLanguage('es')">ES</button>
+            <button onclick="changeLanguage('en')">EN</button>
         </div>
     </header>
 
     <section id="inicio" class="welcome-section">
         <div class="welcome-container">
             <div class="welcome-text">
-                <h1>Bienvenido a Take My Car</h1>
-                <p>Encuentra el auto perfecto para ti o genera ingresos con nuestro servicio de flota virtual.</p>
-                <a href="#contactanos" class="welcome-btn">Saber Más</a>
+                <h1 data-key="welcome">Bienvenido a Take My Car</h1>
+                <p data-key="find">Encuentra el auto perfecto para ti o genera ingresos con nuestro servicio de flota virtual.</p>
+                <a href="#contactanos" class="welcome-btn" data-key="more">Saber Más</a>
             </div>
             <div class="welcome-image">
                 <img src="images/image1.jpg" alt="Imagen de auto">
@@ -40,24 +42,24 @@
 
     <section class="offer-section">
         <div class="offer-container">
-            <h2 class="offer-title">¿Qué ofrecemos?</h2>
+            <h2 class="offer-title" data-key="ofer">¿Qué ofrecemos?</h2>
             <div class="offer-content">
                 <div class="offer-description">
-                    <p>Te damos la posibilidad de escoger entre una gran cantidad de vehículos cerca tuyo y disponibles a tu uso, para que escojas el que mejor se acople a tus necesidades.</p>
-                    <a href="#contactanos" class="offer-btn">Saber Más</a>
+                    <p data-key="give">Te damos la posibilidad de escoger entre una gran cantidad de vehículos cerca tuyo y disponibles a tu uso, para que escojas el que mejor se acople a tus necesidades.</p>
+                    <a href="#contactanos" class="offer-btn" data-key="more">Saber Más</a>
                 </div>
                 <div class="offer-features">
                     <div class="feature-item">
                         <img src="images/rayo-rapido.webp" alt="Rápido">
-                        <p>Rápido</p>
+                        <p data-key="fast">Rápido</p>
                     </div>
                     <div class="feature-item">
                         <img src="images/facil.png" alt="Fácil">
-                        <p>Fácil</p>
+                        <p data-key="easy">Fácil</p>
                     </div>
                     <div class="feature-item">
                         <img src="images/seguro.png" alt="Seguro">
-                        <p>Seguro</p>
+                        <p data-key="secure">Seguro</p>
                     </div>
                 </div>
             </div>
@@ -67,8 +69,8 @@
     <section id="about-us" class="about-section">
         <div class="about-container">
             <div class="about-text">
-                <h1 class="about-title">¿Quiénes Somos?</h1>
-                <h2 class="about-subtitle">En TakeMyCar somos una plataforma que busca mejorar el proceso de alquiler, haciéndolo más sencillo, barato y eficiente.</h2>
+                <h1 class="about-title" data-key="who">¿Quiénes Somos?</h1>
+                <h2 class="about-subtitle" data-key="platform">En TakeMyCar somos una plataforma que busca mejorar el proceso de alquiler, haciéndolo más sencillo, barato y eficiente.</h2>
             </div>
             <div class="about-image">
                 <img src="images/quienes-somos.png" alt="Sobre nosotros">
@@ -77,12 +79,12 @@
     
         <div class="mission-vision-wrapper">
             <div class="mission-block">
-                <h3>Misión</h3>
-                <p>Facilitar el acceso a vehículos compartidos mediante una plataforma digital que permita a las personas alquilar autos de otros propietarios, aprovechando la tecnología para ofrecer una alternativa más eficiente y sostenible al modelo tradicional.</p>
+                <h3 data-key="mission">Misión</h3>
+                <p data-key="mission2">Facilitar el acceso a vehículos compartidos mediante una plataforma digital que permita a las personas alquilar autos de otros propietarios, aprovechando la tecnología para ofrecer una alternativa más eficiente y sostenible al modelo tradicional.</p>
             </div>
             <div class="vision-block">
-                <h3>Visión</h3>
-                <p>Crear un mundo donde el acceso a la movilidad sea sencillo y compartido, contribuyendo a ciudades más limpias y sostenibles mediante la economía colaborativa.</p>
+                <h3 data-key="vision">Visión</h3>
+                <p data-key="vision2">Crear un mundo donde el acceso a la movilidad sea sencillo y compartido, contribuyendo a ciudades más limpias y sostenibles mediante la economía colaborativa.</p>
             </div>
         </div>
     </section>
@@ -91,14 +93,14 @@
     <section id="contactanos" class="contact-section">
         <div class="contact-wrapper">
             <div class="contact-content">
-                <h1>Contáctanos</h1>
-                <p>Estamos aquí para ayudarte. Si deseas realizar tu reserva vía telefónica o vía Whatsapp, comunícate con nosotros. <br><br>
+                <h1 data-key="contactus">Contáctanos</h1>
+                <p data-key="help">Estamos aquí para ayudarte. Si deseas realizar tu reserva vía telefónica o vía Whatsapp, comunícate con nosotros. <br><br>
                 Si tienes alguna pregunta o necesitas más información acerca de cómo ganar con tu vehículo sin uso, no dudes en ponerte en contacto con nosotros.</p>
                 <ul>
-                    <li><strong>Teléfono:</strong> +51 123 456 789</li>
-                    <li><strong>Whatsapp:</strong> +51 987 654 321</li>
+                    <li><strong data-key="phone">Teléfono:</strong> +51 123 456 789</li>
+                    <li><strong >Whatsapp:</strong> +51 987 654 321</li>
                     <li><strong>Email:</strong> contacto@takemycar.com</li>
-                    <li><strong>Dirección:</strong> Calle Take 123, Lima, Perú</li>
+                    <li><strong data-key="address">Dirección:</strong> Calle Take 123, Lima, Perú</li>
                 </ul>
             </div>
             <div class="contact-image">
@@ -118,14 +120,14 @@
                 <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
             </div>
             <div class="footer-links">
-                <a href="#about-us">Sobre Nosotros</a>
-                <a href="#contactanos">Contáctanos</a>
+                <a href="#about-us" data-key="aboutus">Sobre Nosotros</a>
+                <a href="#contactanos" data-key="contactus">Contáctanos</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 TakeMyCar. Todos los derechos reservados.</p>
+            <p data-key="rigths">© 2024 TakeMyCar. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
